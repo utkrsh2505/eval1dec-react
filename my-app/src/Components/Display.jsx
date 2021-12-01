@@ -20,18 +20,24 @@ const Display = ()=>{
 setIsLoading(false)
     })
     },[])
+
+    const handleYear = ()=>{
+
+    }
     
     return(
         <div>
         <h1>CAR HOUSE</h1>
-        <div style={{display:"flex" ,justifyContent:"space-around",flexWrap:"wrap",}}>
+        <button  style={{color:"white", backgroundColor:"black"}} onClick={handleYear}>Sort by Year</button>
+        <div style={{display:"flex" ,justifyContent:"center",flexWrap:"wrap",}}>
        {value.map((item)=>(
            <div style={{width:"500px",margin:"10px",padding:"10px"}} key={item.id}>
                <div>
-                   <img src={item.image} style={{width:"250px",height:"300px"}}/>
+                   <img src={item.image} style={{width:"200px",height:"200px"}}/>
               
                </div>
                {`Name:${item.name} Type:${item.type}  Price:${item.price}`}
+               <div><button  style={{color:"white", backgroundColor:"green",margin:"10px"}}>Buy Now Button</button></div>
               </div>
        ))}
        </div>
