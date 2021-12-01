@@ -29,7 +29,7 @@ setIsLoading(false)
         <div>
         <h1>CAR HOUSE</h1>
         <button  style={{color:"white", backgroundColor:"black"}} onClick={handleYear}>Sort by Year</button>
-        <div style={{display:"flex" ,justifyContent:"center",flexWrap:"wrap",}}>
+        <div style={{display:"flex" ,justifyContent:"center",flexWrap:"wrap"}}>
        {value.map((item)=>(
            <div style={{width:"500px",margin:"10px",padding:"10px"}} key={item.id}>
                <div>
@@ -37,7 +37,7 @@ setIsLoading(false)
               
                </div>
                {`Name:${item.name} Type:${item.type}  Price:${item.price}`}
-               <div><button  style={{color:"white", backgroundColor:"green",margin:"10px",fontSize:"30px",borderRadius:"10px"}}>Buy Now Button</button></div>
+               <div><button  style={{color:"white", backgroundColor:"green",margin:"10px",fontSize:"30px",borderRadius:"10px"}}>Buy Now</button></div>
               </div>
        ))}
        </div>
