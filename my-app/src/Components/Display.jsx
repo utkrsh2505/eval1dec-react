@@ -37,7 +37,7 @@ setIsLoading(false)
               
                </div>
                {`Name:${item.name} Type:${item.type}  Price:${item.price}`}
-               <div><button  style={{color:"white", backgroundColor:"green",margin:"10px"}}>Buy Now Button</button></div>
+               <div><button  style={{color:"white", backgroundColor:"green",margin:"10px",fontSize:"30px",borderRadius:"10px"}}>Buy Now Button</button></div>
               </div>
        ))}
        </div>
